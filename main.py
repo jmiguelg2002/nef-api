@@ -1,4 +1,3 @@
-# mock_api.py
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -25,6 +24,18 @@ policy_rules = {
         "gaming":  {"policy": "Policy-Gold",   "bandwidth": 70.0,  "latency": 20.0},
         "social":  {"policy": "Policy-Silver", "bandwidth": 40.0,  "latency": 40.0},
         "messages":{"policy": "Policy-Bronze", "bandwidth": 25.0,  "latency": 65.0}
+    },
+    "user_003": {
+        "work":    {"policy": "Policy-Silver", "bandwidth": 70.0,  "latency": 18.0},
+        "gaming":  {"policy": "Policy-Gold",   "bandwidth": 90.0,  "latency": 15.0},
+        "social":  {"policy": "Policy-Silver", "bandwidth": 35.0,  "latency": 45.0},
+        "messages":{"policy": "Policy-Bronze", "bandwidth": 25.0,  "latency": 60.0}
+    },
+    "user_004": {
+        "work":    {"policy": "Policy-Gold",   "bandwidth": 95.0,  "latency": 11.0},
+        "gaming":  {"policy": "Policy-Silver", "bandwidth": 60.0,  "latency": 28.0},
+        "social":  {"policy": "Policy-Bronze", "bandwidth": 30.0,  "latency": 55.0},
+        "messages":{"policy": "Policy-Bronze", "bandwidth": 20.0,  "latency": 70.0}
     },
     "user_abc": {
         "work":    {"policy": "Policy-Silver", "bandwidth": 60.0,  "latency": 15.0},
