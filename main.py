@@ -2,7 +2,6 @@ from fastapi import FastAPI, Query, Body
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
-import uvicorn
 
 app = FastAPI()
 
